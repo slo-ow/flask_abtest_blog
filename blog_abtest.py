@@ -21,11 +21,6 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.session_protection = 'strong'
 
-# you can add your Google Maps API key here
-app.config['GOOGLEMAPS_KEY'] = "AIzaSyBLLp7r6pTKP48trkoQy8v2boesLXvstCc"
-
-GoogleMaps(app)
-
 #
 qrcode = QRcode(app)
 
@@ -44,13 +39,7 @@ def board():
 #
 @app.route("/contact")
 def contact():
-    mymap = Map(
-        identifier="view-side",
-        lat=37.4419,
-        lng=-122.1430,
-        markers=[(35.688672659335104, 139.70176049718648)]
-    )
-    return render_template('contact.html', mymap=mymap)
+    return render_template('mymap.html')
 #
 @app.route("/qrcode")
 def qrcode():

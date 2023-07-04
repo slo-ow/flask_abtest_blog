@@ -5,6 +5,7 @@ use blog_db;
 SHOW TABLES;
 
 select * from user_info;
+select * from blog_list;
 
 -- 사용자 테이블 --
 CREATE TABLE user_info (
