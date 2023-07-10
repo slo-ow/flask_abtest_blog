@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block body %}
+<!DOCTYPE html="html">
+<html>
+
+<head>
+    <script type="text/javascript" src="/static/dist/js/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMv7PaEl22Trll_I2C28-Iwr9GP7Z73Yc&callback=initMap" async defer></script>
+</head>
+
+<body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map" style="height: 600px;"></div>
+
+</body>
+
+</html>
+{% endblock %}
